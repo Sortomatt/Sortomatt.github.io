@@ -5,6 +5,9 @@
     <meta Charset="utf-8">
     <title> Whitewater Rafting Vacations | Dry Oar Boating | Home </title>
     <style>
+        * {
+            box-sizing:border-box;
+        }
         @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
         .content {
             width: 80%;
@@ -38,11 +41,18 @@
             margin: 0 auto;
             padding: 15px;
         }
-        .leftcol{
-            width:48%;
+        img {
+            max-width: 100%;
         }
-        .rightcol{
+        #top, #middle {
+            display: flex;
+            flex-flow:row wrap;
+            align-items: center;
+        }
+        .leftcol, .rightcol {
             width:48%;
+            flex:1 0 15em;
+            margin: .5em;
         }
         #middle {
             background-color: #FF0A04;
@@ -58,15 +68,29 @@
         
         #bottom {
             text-align: center;
-            width: 80%;
+            width: 100%;
             margin: 0 auto;
         }
         
         nav {
-            background-color: #5C2E2D;
+            background-color: brown;
             font-size: 1.1em;
-            padding: 1px;
+            width:100%;
+        }
+        footer{
+            height: 55px;
+            width: 100%;
+            display:flex;
+            flex-flow:row;
+            align-content: flex-end;
         
+        }
+        .icon{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        #icons{
+      margin-left:auto;
         }
     </style>
 </head>
@@ -107,20 +131,23 @@
             </div>
         </section>
         <section id="bottom">
+            <h2> Come Run with us!</h2>
             <p>We invite you to come relax with us on one of the amazing rivers we visit. Check out our trips and let us know which one best suits you. We're waiting to hear from you!
             </p>
         </section>
         <footer>
             <p>&copy; 2016 Dry Oar || Matthew Sortomme </p>
+            <section id="icons">
             <a target="_blank">
-                <img src="facebook.png" alt="facebook icon">
+                <img src="facebook.png" alt="facebook icon" class="icon">
             </a>
             <a target="_blank">
-                <img src="pinterest.png" alt="pinterest icon">
+                <img src="pinterest.png" alt="pinterest icon" class="icon">
             </a>
             <a target="_blank">
-                <img src="twitter.png" alt="twitter icon">
+                <img src="twitter.png" alt="twitter icon" class="icon">
             </a>
+                </section>
         </footer>
     </div>
 </body>
