@@ -36,6 +36,7 @@
         }
         img {
             max-width: 100%;
+            margin:0px;
         }
         #top, #middle {
             display: flex;
@@ -56,7 +57,7 @@
         }
         
         .stand-out {
-            color: #2D8633;
+            color: white;
         }
         
         #bottom {
@@ -64,23 +65,50 @@
             width: 100%;
             margin: 0 auto;
         }
-        
+    .logo {
+    float:left;
+        width: 110px;
+        border: groove;
+        border-color: brown;
+        margin-top:-20px;
+        background-color:white;
+        position: relative;
+}
         nav {
             background-color: brown;
             font-size: 1.1em;
             width:100%;
         }
+    nav > ul{
+    list-style-type: none;
+        display: flex;
+        flex-flow: row wrap;
+        line-height: 3em;
+        }
+    nav ul{
+    margin:0;
+}
+    nav li{
+    flex: 1 1 8em;
+}
+    nav a:link, nav a:visited {
+    color:white;
+}
+    nav a:hover {
+    color:black;
+    background-color:blue;
+}
+    nav a {
+    padding:.85em;
+}
         footer{
             height: 55px;
             width: 100%;
             display:flex;
-            flex-flow:row;
-            align-content: flex-end;
-        
         }
         .icon{
-            margin-left: 10px;
-            margin-right: 10px;
+            margin-right: 5px;
+            float:right
         }
         #icons{
       margin-left:auto;
