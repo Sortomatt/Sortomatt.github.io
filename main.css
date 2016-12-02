@@ -15,7 +15,7 @@
         h4,
         h5,
         h6 {
-            color: #04F714;
+            color:firebrick;
             font-family: 'Shadows Into Light', cursive;
             font-size: 2em;
             margin-bottom: 0;
@@ -30,7 +30,7 @@
         }
         section {
             color: ;
-            background-color: ;
+            background-color:#61768B ;
             margin: 0 auto;
             padding: 15px;
         }
@@ -43,6 +43,11 @@
             flex-flow:row wrap;
             align-items: center;
         }
+        .body{
+            display: flex;
+            flex-flow:row wrap;
+            align-items: center;
+}
         .leftcol, .rightcol {
             width:48%;
             flex:1 0 15em;
@@ -65,19 +70,27 @@
             width: 100%;
             margin: 0 auto;
         }
+        .title{
+        text-align: center;
+        }
+        .start{
+        font-weight: bold;
+        color:#FF9500;
+}
     .logo {
     float:left;
         width: 110px;
         border: groove;
         border-color: brown;
-        margin-top:-20px;
+        margin-top:-15px;
         background-color:white;
         position: relative;
 }
         nav {
             background-color: brown;
-            font-size: 1.1em;
+            font-size: 1em;
             width:100%;
+            margin-top:15px;
         }
     nav > ul{
     list-style-type: none;
@@ -95,8 +108,12 @@
     color:white;
 }
     nav a:hover {
-    color:black;
-    background-color:blue;
+    color:#D6BA90;
+    background-color:#082F57;
+}
+    nav a:active{
+    color:#2D5071;
+    Background-color:#AE813C;
 }
     nav a {
     padding:.85em;
@@ -104,7 +121,7 @@
         footer{
             height: 55px;
             width: 100%;
-            display:flex;
+
         }
         .icon{
             margin-right: 5px;
