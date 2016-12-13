@@ -17,7 +17,6 @@
         h6 {
             color:firebrick;
             font-family: 'Shadows Into Light', cursive;
-            font-size: 2em;
             margin-bottom: 0;
         }
         
@@ -54,7 +53,7 @@
             margin: .5em;
         }
         #middle {
-            background-color: #FF0A04;
+            background-color: #FF9500;
         }
         
         .red-text {
@@ -62,9 +61,17 @@
         }
         
         .stand-out {
-            color: white;
+            color: black;
         }
-        
+        .subtype {
+    font-size: 12px;
+   margin-top: 30px;
+    margin-left: 10px;
+            margin-bottom: 10px;
+}
+    .blogpic{
+    float: left;
+    }
         #bottom {
             text-align: center;
             width: 100%;
@@ -72,6 +79,7 @@
         }
         .title{
         text-align: center;
+        height: 100px;
         }
         .start{
         font-weight: bold;
@@ -121,7 +129,7 @@
         footer{
             height: 55px;
             width: 100%;
-
+            background-color:white;
         }
         .icon{
             margin-right: 5px;
