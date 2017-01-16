@@ -1,0 +1,20 @@
+.content{
+    width: 80%;
+    margin: auto;
+    max width: 960px;
+    background-color: dimgray;
+    padding-left: 5px;
+}
+h1,
+h2{
+    color: aqua;
+}
+p{
+    color: azure;
+}
+#page-header{
+    margin: auto;
+}
+li{
+    color: azure;
+}

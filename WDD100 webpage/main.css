@@ -1,0 +1,140 @@
+* {
+            box-sizing:border-box;
+        }
+        @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+        .content {
+            width: 80%;
+            max-width: 960px;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color:firebrick;
+            font-family: 'Shadows Into Light', cursive;
+            margin-bottom: 0;
+        }
+        
+        h2 {
+            margin-bottom: 0;
+        }
+        p{
+            margin-top:3px;
+            
+        }
+        section {
+            color: ;
+            background-color:#61768B ;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        img {
+            max-width: 100%;
+            margin:0px;
+        }
+        #top, #middle {
+            display: flex;
+            flex-flow:row wrap;
+            align-items: center;
+        }
+        .body{
+            display: flex;
+            flex-flow:row wrap;
+            align-items: center;
+}
+        .leftcol, .rightcol {
+            width:48%;
+            flex:1 0 15em;
+            margin: .5em;
+        }
+        #middle {
+            background-color: #FF9500;
+        }
+        
+        .red-text {
+            color: crimson;
+        }
+        
+        .stand-out {
+            color: black;
+        }
+        .subtype {
+    font-size: 12px;
+   margin-top: 30px;
+    margin-left: 10px;
+            margin-bottom: 10px;
+}
+    .blogpic{
+    float: left;
+    }
+        #bottom {
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .title{
+        text-align: center;
+        height: 100px;
+        }
+        .start{
+        font-weight: bold;
+        color:#FF9500;
+}
+    .logo {
+    float:left;
+        width: 110px;
+        border: groove;
+        border-color: brown;
+        margin-top:-15px;
+        background-color:white;
+        position: relative;
+}
+        nav {
+            background-color: brown;
+            font-size: 1em;
+            width:100%;
+            margin-top:15px;
+        }
+    nav > ul{
+    list-style-type: none;
+        display: flex;
+        flex-flow: row wrap;
+        line-height: 3em;
+        }
+    nav ul{
+    margin:0;
+}
+    nav li{
+    flex: 1 1 8em;
+}
+    nav a:link, nav a:visited {
+    color:white;
+}
+    nav a:hover {
+    color:#D6BA90;
+    background-color:#082F57;
+}
+    nav a:active{
+    color:#2D5071;
+    Background-color:#AE813C;
+}
+    nav a {
+    padding:.85em;
+}
+        footer{
+            height: 55px;
+            width: 100%;
+            background-color:white;
+        }
+        .icon{
+            margin-right: 5px;
+            float:right
+        }
+        #icons{
+      margin-left:auto;
+        }
