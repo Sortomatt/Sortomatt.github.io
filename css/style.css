@@ -2,12 +2,12 @@
     width: 80%;
     margin: auto;
     max width: 960px;
-    background-color: dimgray;
     padding-left: 5px;
 }
 h1,
-h2{
-    color: aqua;
+h2,
+h3{
+    color:firebrick;
 }
 p{
     color: azure;
@@ -17,4 +17,16 @@ p{
 }
 li{
     color: azure;
+}
+footer{
+    width: 80%;
+    margin: auto;
+    max width: 960px;
+    padding-left: 5px;
+}
+a{
+    color:aqua;
+}
+ul{
+    background-color: firebrick;
 }
