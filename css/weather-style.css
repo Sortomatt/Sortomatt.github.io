@@ -1,0 +1,57 @@
+box-sizing:border-box
+.content{
+    width: 100%;
+    margin: auto;
+    
+}
+img{
+    width: auto;
+    margin-left: -30px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+.temp-sum{
+    width: 100%;
+    margin: auto;
+}
+ul li{
+    width: 50%;
+   font-size: 1.3em;
+}
+.high{
+    font-size: 3em;
+}
+.low{
+    font-size: 1.5em;
+}
+sup{
+    font-size: 0.5em;
+}
+.summary{
+    font-size: 2em;
+}
+.middle{
+    width 100%
+    margin: auto;
+    background-color: aqua;
+}
+.icon{
+    width: 90px;
+    position: relative;
+    left: 30px;
+}
+main-icon{
+    width: 100px;
+}
+nav{
+    background-color: aqua;
+}
+h1, h2{
+color: coral;
+}
+.top{
+    background-color: aqua
+}
