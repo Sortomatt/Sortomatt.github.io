@@ -79,6 +79,9 @@
         text-align: center;
         padding: .2em;
     }
+        .wireframe {
+        width: 30%;
+    }
 }
 
 @media (min-width:500px) and (max-width:800px) {
@@ -177,7 +180,9 @@
         border-bottom: solid;
     }
 }
-
+    .wireframe {
+        width: 30%;
+    }
 @media (min-width:800px) {
     .content {
         width: 90%;
