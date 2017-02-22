@@ -6,7 +6,10 @@
     .content {
         width: 100%;
         margin: auto;
-        background-color: aqua;
+        background-color: burlywood;
+    }
+    a {
+        text-decoration: none;
     }
     img {
         width: 100%;
@@ -19,6 +22,7 @@
         list-style-type: none;
         display: flex;
         flex-direction: row;
+        align-content: center;
     }
     ul li {
         width: 50%;
@@ -35,7 +39,7 @@
         font-size: 0.5em;
     }
     .summary {
-        font-size: 2em;
+        font-size: 1.7em;
     }
     .middle {
         width: 100%;
@@ -59,13 +63,21 @@
     h2 {
         color: red;
     }
-    h3{
+    h3 {
         display: none;
     }
     #hourly {
-        display: none;
-        width: 0;
-        height: 0;
+        display: flex;
+        visibility: collapse;
+        overflow: scroll;
+        width: 90%;
+        justify-content: space-between;
+    }
+        #hourly .mid {
+        visibility: visible;
+        margin-right: -.9em;
+        text-align: center;
+        padding: .2em;
     }
 }
 
@@ -73,6 +85,10 @@
     .content {
         width: 100%;
         margin: auto;
+        background-color: burlywood;
+    }
+    a {
+        text-decoration: none;
     }
     img {
         width: 100%;
@@ -93,6 +109,7 @@
         list-style-type: none;
         display: flex;
         flex-direction: row;
+        align-items: center;
     }
     ul li {
         width: 50%;
@@ -103,6 +120,13 @@
     nav li {
         border: solid;
         margin-right: 20px;
+        flex: 0 1 30%;
+    }
+    nav {
+        background-color: darkorange;
+        font-size: 1.4em;
+        height: 3.5em;
+        border: solid;
     }
     .high {
         font-size: 5em;
@@ -114,7 +138,7 @@
         font-size: .5em;
     }
     .summary {
-        font-size: 3em;
+        font-size: 2em;
     }
     .middle {
         width: 100%;
@@ -131,29 +155,21 @@
         width: 80%;
     }
     ul img {}
-    nav {
-        background-color: darkorange;
-        font-size: 1.4em;
-        height: 4em;
-        border: solid;
-    }
     h1,
     h2,
-    h3{
+    h3 {
         color: red;
-    }
-    .content {
-        background-color: aqua
     }
     ol {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         width: 90%;
     }
     ol li {
-        display: none;
+        visibility: collapse;
     }
-    ol .mid {
+    #hourly .mid {
         visibility: visible;
         margin-right: -.9em;
         text-align: center;
@@ -166,6 +182,10 @@
     .content {
         width: 90%;
         margin: auto;
+        background-color:burlywood;
+    }
+    a {
+        text-decoration: none;
     }
     img {
         width: 100%;
@@ -181,6 +201,7 @@
         list-style-type: none;
         display: flex;
         flex-direction: row;
+        align-items: center;
     }
     ul li {
         width: 35%;
@@ -193,6 +214,7 @@
         height: 2.5em;
         border: solid;
         margin-top: 20px;
+        flex-wrap: wrap;
     }
     nav li {
         border: solid;
@@ -209,7 +231,7 @@
         font-size: .5em;
     }
     .summary {
-        font-size: 3em;
+        font-size: 2.5em;
     }
     .middle {
         width: 90%;
@@ -234,7 +256,7 @@
     }
     h1,
     h2,
-    h3{
+    h3 {
         color: red;
         margin-bottom: -20px;
         margin-left: 10px;
@@ -248,12 +270,11 @@
         border: solid;
         margin-right: 20px;
     }
-    .content {
-        background-color: aqua
-    }
+
     ol {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         width: 100%;
         align-items: center;
     }
@@ -266,8 +287,7 @@
         padding: .2em;
         border-bottom: solid;
         width: 100%;
-        overflow:scroll;
-        margin-right: -0.3em;
+        overflow: scroll;
     }
     .wireframe {
         width: 30%;

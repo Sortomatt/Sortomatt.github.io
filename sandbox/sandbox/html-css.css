@@ -62,10 +62,14 @@ h1{
 }
 #hi-lo{
   list-style: none;
-  margin: 0;
-  padding: 0;
+display: flex;
+ /* margin: 0;
+  padding: 0;*/
 }
 #hi-lo>li{
+    flex:1 1 auto;
+    text-align:center;
+    /*
   display: inline-block;
   width: 24%; /* Browser rounding errors force this down */
   text-align: center;
@@ -74,7 +78,9 @@ h1{
 }
 
 #hi-lo #conditions{
-  width: 49%; /* Browser rounding errors force this down */
+    flex-grow: 2;
+
+ /* width: 49%;  Browser rounding errors force this down */
 }
 
 main ul:nth-of-type(2){
