@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Home</title>
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="../jsonweather-html/css/weather-style.css" type="text/css" media="screen">
+    
+    <script>function getData(lat, long){
+    $.ajax({
+        url:"https://api.wunderground.com/api/66f2cca3c6759655/geolookup/conditions/q/" + lat + "," +long + ".json",
+        dataType:"jsonp",
+        success: function(data){
+            console.log(data);
+            var location = data.location.city + ", " + data.location.state;
+            var temp =Math.round(data.current_observation.temp_f);
+            var summary = data.current_observation.weather;
+            var humidity = data.current_observation.relative_humidity;
+            var feels_like = data.current_observation.feelslike_f;
+            var uv = data.current_observation.UV;
+        $("#cityDisplay").text(location);
+        $("#currentTemp").text(temp + "°f");
+        $("#summary").text(summary);
+        $("#add1").text("Humidity: " + humidity);
+        $("#add2").text("Feels like " + feels_like);
+        $("#add3").text("UV rating: " + uv);
+        }
+    })
+        }
+    </script>
+</head>
+<!-- *********************************************
+* Who Did You Collaborate With On This Assessment?
+* 1. Matthew Sortomme
+* 2. Morgan Orton
+* 3. Daniel Sedrick
+* 4. Dustin Rowbury
+* ******************************************** -->
+<body>
+  <div id="wrapper">
+    <header id="page-header"></header>
+    <nav id="page-nav"></nav>
+    <main id="page-main">
+      <section class="weather-container">
+        <div id="cover">
+          <div id="status">Loading...</div>
+        </div>
+        <h1 id="cityDisplay"></h1>
+        <h2>Current Conditions</h2>
+        <ul id="current_conditions">
+          <li id="currentTemp"></li>
+          <li id="summary"></li>
+          <li id="add1"></li>
+          <li id="add2"></li>
+          <li id="add3"></li>
+        </ul>
+      </section>
+    </main>
+    <footer id="page-footer">
+      <div id="footer-content"></div>
+      <small>Last updated: </small>
+    </footer>
+   <script
+  src="https://code.jquery.com/jquery-3.2.0.min.js"
+  integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
+  crossorigin="anonymous"></script>
+    <script src="scripts/modules.js"></script>
+    <script src="scripts/remote_wu.js"></script>
+  </div>
+</body>
+
+</html>

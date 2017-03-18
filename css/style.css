@@ -28,5 +28,8 @@ ul{
     background-color: firebrick;
 }
 img{
-    width: 35%
+    width: 35%;
+}
+#brand{
+    width: 6em;
 }
