@@ -38,6 +38,7 @@ $.ajax({
            $("#manu").html(manu);
            $("#price").html(price);
            $("#reviews").html(reviews);
+           $("#pimg").html(output);
 
 
        })
